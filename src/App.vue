@@ -1,6 +1,9 @@
 <template>
     <div id="app">
-        <header><h4>NYTimes Books</h4></header>
+        <header>
+            <h1>BigBox Challenge - Julian Liendo</h1>
+            <h4>NYTimes Books API</h4>
+        </header>
         <SearchBar :array="arrayLists"/>
         <Books/>
     </div>
@@ -44,16 +47,20 @@
 </script>
 
 <style>
-    h4 {
-        font-size: 35px;
+    body {
+        background-color: #252422;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    h1 {color: #eb5e28;font-size: 36px}
+    h4 {font-size: 30px}
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #2c3e50;
         margin-top: 60px;
+        color:#ccc5b9;
     }
 </style>
