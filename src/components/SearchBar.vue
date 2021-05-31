@@ -48,7 +48,7 @@
             async search(title, cat) {
                 this.result = []
                 let API = APIStart + cat + APIEnd
-                console.log(API)
+
                 await axios.get(API)
                     .then((response) => this.responseData = response.data.results.books)
                     .catch((error) => {
